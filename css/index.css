@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Yanone+Kaffeesatz&display=swap');
+:root {
+    --main-color: black;
+    --secondary-color: #9e8656;
+    /* background-color: #A1DAD3; */
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(165, 220, 215);
+    background: linear-gradient( 90deg, rgba(165, 220, 215, 1) 0%, rgba(99, 155, 146, 1) 80%);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+/* .button {
+    display: inline-block;
+    padding: 0.3em 1.2em;
+    border: 0.1em solid black;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+    transition: all 0.3s;
+    background-color: transparent;
+}
+
+.button:hover {
+    color: #000000;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.card-button {
+    border-color: black;
+    color: black;
+}
+
+.card-button:hover {
+    background-color: beige;
+    color: chocolate;
+} */
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.semi-transparent-button {
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 8px;
+  width: 80%;
+  max-width: 200px;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-out;
+} 
+
+/* Header */
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+}
+
+@media (max-width: 660px) {
+    header nav {
+        display: block;
+    }
+}
+
+header .container .logo a {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+}
+
+header nav .top-menu {
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 1em;
+    margin: auto;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+header nav .top-menu a {
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid transparent;
+    padding: 2px;
+    font-size: 25px;
+}
+
+header nav .top-menu a:hover {
+    border: 1px solid var(--secondary-color);
+}
+
+
+/* Banner Section */
+
+main section#banner {
+    background: url('../image/main-logo.jpg') no-repeat center top/cover;
+    height: 100vh;
+}
+
+main section#banner .title {
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding: 1em 0;
+    margin-block-start: 0em;
+    margin-block-end: 1em;
+    text-align: center;
+}
+
+main section#banner .bottom-title {
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding: 0;
+    
+    margin-block-end: 3em;
+    text-align: center;
+    justify-content: center;
+}
+
+
+/* About Section*/
+main section#about {
+   background: rgb(162,235,206);
+background: linear-gradient(13deg, rgba(162,235,206,1) 0%, rgba(99,155,146,1) 100%);
+}
+
+main section#about .container {
+    margin: auto;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+@media (min-width: 660px) {
+    main section#about .container {
+        display: grid;
+        grid-template-columns: 1fr 3fr 3fr;
+        column-gap: 20px;
+        row-gap: 2em;
+    }
+}
+
+@media (min-width: 660px) {
+    main section#about .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 20px;
+        row-gap: 2em;
+    }
+}
+
+@media (min-width: 660px) and (max-width: 768px) {
+    main section#about .container .box1 {
+        writing-mode: vertical-lr;
+        text-orientation: upright;
+    }
+}
+
+main section#about .container .box1 {
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding: 0 0;
+    margin-block-start: 3em;
+    margin-block-end: 3em;
+    text-align: center;
+    justify-content: center;
+}
+
+main section#about .container .box2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+main section#about .container .box3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+/* Galery Section */
+main section#galery {
+    background: rgb(155,224,177);
+/* background: linear-gradient(180deg, rgba(155,224,177,1) 0%, rgba(99,155,146,1) 100%); */
+}
+
+h2.galery-title {
+    display: flex;
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding: 3em 0;
+    margin-block-start: 0em;
+    margin-block-end: 40px;
+    text-align: center;
+    justify-content: center;
+}
+
+.containergalery {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 30px 0;
+    }
+
+/* Buy Section */
+
+main section#buy {
+    background: rgb(162,223,235);
+    /* background: linear-gradient(0deg, rgba(162,223,235,1) 0%, rgba(99,155,146,1) 100%); */
+}
+main section#buy h2 {
+    display: flex;
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding: 3em 0;
+    margin-block-start: 0em;
+    margin-block-end: 3em;
+    text-align: center;
+    justify-content: center;
+}
+
+main section#buy .buy-card-wrapper .buy-card {
+    padding: 10px 0 20px 0;
+}
+
+main section#buy .buy-card-wrapper .buy-card img {
+    display: block;
+    width: 100%;
+}
+
+main section#buy .buy-card-wrapper .buy-card h3 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+main section#buy .buy-card-wrapper .buy-card .button-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+@media (min-width: 580px) {
+    main .buy-card-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+@media (min-width: 980px) {
+    main .buy-card-wrapper {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+/* delivery Section */
+main #delivery {
+    background: #9BC3E0;
+}
+main #delivery h2 {
+    display: flex;
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding: 3em 0;
+    margin-block-start: 0em;
+    margin-block-end: 2em;
+    text-align: center;
+    justify-content: center;
+}
+
+main #delivery p {
+    font-size: 1rem;
+    font-family: 'Oswald', sans-serif;
+    padding: 0 0;
+    margin-block-start: 3em;
+    margin-block-end: 3em;
+    text-align: center;
+    justify-content: center;
+}
+
+
+/* Contact Section */
+
+main #contact {
+    background: rgb(113, 178, 224);
+}
+main #contact h3 {
+    display: flex;
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding: 2em 0;
+    margin-block-start: 0em;
+    text-align: center;
+    justify-content: center;
+}
+
+main #contact .container .social  {
+    font-size: 1rem;
+    font-family: 'Oswald', sans-serif;
+    padding: 10px 30px;
+    text-align: end;
+}
+
+main #contact .container .networks {
+    display: flex;
+    justify-content: center;
+    
+}
+
+main #contact .container .networks img {
+    width: 30px;
+    height: 30px;
+}
+main #contact .container .networks a {
+    padding: 30px 10px 10px 10px;
+
+}
+
+/* footer container */
+
+footer {
+    background: rgb(4, 147, 248);
+}
+
+footer .container p {
+    display: flex;
+    justify-content: flex-end;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
