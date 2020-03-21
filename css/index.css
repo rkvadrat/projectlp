@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald|Yanone+Kaffeesatz&display=swap');
+@font-face {
+    font-family: 'aquarion';
+    src: url('fonts/Aquarion.ttf');
+}
+
+* {
+   font-family: 'aquarion'; 
+}
 :root {
     --main-color: black;
     --secondary-color: #9e8656;
@@ -19,37 +26,6 @@ body {
     margin: 0 auto;
     padding: 30px 0;
 }
-
-/* .button {
-    display: inline-block;
-    padding: 0.3em 1.2em;
-    border: 0.1em solid black;
-    margin: 0 0.3em 0.3em 0;
-    border-radius: 0.12em;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-weight: 300;
-    color: black;
-    text-align: center;
-    transition: all 0.3s;
-    background-color: transparent;
-}
-
-.button:hover {
-    color: #000000;
-    background-color: #ffffff;
-    cursor: pointer;
-}
-
-.card-button {
-    border-color: black;
-    color: black;
-}
-
-.card-button:hover {
-    background-color: beige;
-    color: chocolate;
-} */
 
 h1 {
     margin: 0;
@@ -95,8 +71,8 @@ header nav {
 }
 
 header .container .logo a {
-    font-family: 'Oswald', sans-serif;
-    font-size: 2rem;
+    font-family: 'aquarion'; 
+    font-size: 50px;
     display: flex;
     justify-content: space-around;
     vertical-align: middle;
@@ -139,7 +115,7 @@ main section#banner {
 
 main section#banner .title {
     font-size: 50px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'aquarion'; 
     text-transform: uppercase;
     padding: 1em 0;
     margin-block-start: 0em;
@@ -149,7 +125,7 @@ main section#banner .title {
 
 main section#banner .bottom-title {
     font-size: 40px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'aquarion'; 
     text-transform: uppercase;
     padding: 0;
     
@@ -202,7 +178,7 @@ main section#about .container {
 
 main section#about .container .box1 {
     font-size: 2rem;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'aquarion'; 
     text-transform: uppercase;
     padding: 0 0;
     margin-block-start: 3em;
@@ -235,7 +211,7 @@ main section#galery {
 h2.galery-title {
     display: flex;
     font-size: 2rem;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'aquarion'; 
     text-transform: uppercase;
     padding: 3em 0;
     margin-block-start: 0em;
@@ -259,7 +235,7 @@ main section#buy {
 main section#buy h2 {
     display: flex;
     font-size: 2rem;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'aquarion'; 
     text-transform: uppercase;
     padding: 3em 0;
     margin-block-start: 0em;
@@ -311,7 +287,7 @@ main #delivery {
 main #delivery h2 {
     display: flex;
     font-size: 2rem;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'aquarion'; 
     text-transform: uppercase;
     padding: 3em 0;
     margin-block-start: 0em;
@@ -322,7 +298,7 @@ main #delivery h2 {
 
 main #delivery p {
     font-size: 1rem;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'aquarion'; 
     padding: 0 0;
     margin-block-start: 3em;
     margin-block-end: 3em;
@@ -339,7 +315,7 @@ main #contact {
 main #contact h3 {
     display: flex;
     font-size: 2rem;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'aquarion'; 
     text-transform: uppercase;
     padding: 2em 0;
     margin-block-start: 0em;
@@ -349,7 +325,7 @@ main #contact h3 {
 
 main #contact .container .social  {
     font-size: 1rem;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'aquarion'; 
     padding: 10px 30px;
     text-align: end;
 }
