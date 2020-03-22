@@ -17,39 +17,8 @@ body {
 .container {
     max-width: 980px;
     margin: 0 auto;
-    padding: 30px 0;
+    padding: 10px 0;
 }
-
-/* .button {
-    display: inline-block;
-    padding: 0.3em 1.2em;
-    border: 0.1em solid black;
-    margin: 0 0.3em 0.3em 0;
-    border-radius: 0.12em;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-weight: 300;
-    color: black;
-    text-align: center;
-    transition: all 0.3s;
-    background-color: transparent;
-}
-
-.button:hover {
-    color: #000000;
-    background-color: #ffffff;
-    cursor: pointer;
-}
-
-.card-button {
-    border-color: black;
-    color: black;
-}
-
-.card-button:hover {
-    background-color: beige;
-    color: chocolate;
-} */
 
 h1 {
     margin: 0;
@@ -83,7 +52,7 @@ a {
 
 header nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 10px 5px;
 }
@@ -112,10 +81,11 @@ header nav .top-menu {
     justify-content: space-around;
     align-items: baseline;
     padding: 1em;
-    margin: auto;
+    margin: 0;
     list-style-type: none;
     text-decoration: none;
 }
+
 
 header nav .top-menu a {
     text-decoration: none;
@@ -162,7 +132,7 @@ main section#banner .bottom-title {
 /* About Section*/
 main section#about {
    background: rgb(162,235,206);
-background: linear-gradient(13deg, rgba(162,235,206,1) 0%, rgba(99,155,146,1) 100%);
+/* background: linear-gradient(13deg, rgba(162,235,206,1) 0%, rgba(99,155,146,1) 100%); */
 }
 
 main section#about .container {
@@ -180,7 +150,7 @@ main section#about .container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         column-gap: 20px;
-        row-gap: 2em;
+        row-gap: 20px;
     }
 }
 
@@ -206,7 +176,7 @@ main section#about .container .box2 {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 main section#about .container .box3 {
@@ -220,7 +190,6 @@ main section#about .container .box3 {
 /* Galery Section */
 main section#galery {
     background: rgb(155,224,177);
-/* background: linear-gradient(180deg, rgba(155,224,177,1) 0%, rgba(99,155,146,1) 100%); */
 }
 
 h2.galery-title {
@@ -229,8 +198,6 @@ h2.galery-title {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     padding: 3em 0;
-    margin-block-start: 0em;
-    margin-block-end: 40px;
     text-align: center;
     justify-content: center;
 }
@@ -245,16 +212,14 @@ h2.galery-title {
 
 main section#buy {
     background: rgb(162,223,235);
-    /* background: linear-gradient(0deg, rgba(162,223,235,1) 0%, rgba(99,155,146,1) 100%); */
 }
+
 main section#buy h2 {
     display: flex;
     font-size: 2rem;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     padding: 3em 0;
-    margin-block-start: 0em;
-    margin-block-end: 3em;
     text-align: center;
     justify-content: center;
 }
@@ -296,17 +261,17 @@ main section#buy .buy-card-wrapper .buy-card .button-container {
 
 
 /* delivery Section */
+
 main #delivery {
     background: #9BC3E0;
 }
+
 main #delivery h2 {
     display: flex;
     font-size: 2rem;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     padding: 3em 0;
-    margin-block-start: 0em;
-    margin-block-end: 2em;
     text-align: center;
     justify-content: center;
 }
@@ -315,8 +280,8 @@ main #delivery p {
     font-size: 1rem;
     font-family: 'Oswald', sans-serif;
     padding: 0 0;
-    margin-block-start: 3em;
-    margin-block-end: 3em;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
     text-align: center;
     justify-content: center;
 }
@@ -326,11 +291,12 @@ main #delivery p {
 
 main #contact {
     background: rgb(113, 178, 224);
+    
 }
 main #contact h3 {
     display: flex;
     font-size: 2rem;
-    font-family: 'aquarion'; 
+    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     padding: 2em 0;
     margin-block-start: 0em;
@@ -340,7 +306,7 @@ main #contact h3 {
 
 main #contact .container .social  {
     font-size: 1rem;
-    font-family: 'aquarion'; 
+    font-family: 'Oswald', sans-serif;
     padding: 10px 30px;
     text-align: end;
 }
