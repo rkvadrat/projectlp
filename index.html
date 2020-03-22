@@ -130,7 +130,7 @@
             <div class="container">
                 <h2 class="wow fadeInUp">Оплата і доставка</h2>
                 <div class="delivery-wrapper">
-                  <p>Замовлення приймаються цілодобово і опрацьовуються в робочий час</p>
+                    <p>Замовлення приймаються цілодобово і опрацьовуються в робочий час</p>
                     <p>Для кожного замовлення терміни індивідуальні</p>
                     <p>Доставка поштовими службами по всій Україні.</p>
                     <p>Хочете дізнатися більше - пишіть!</p>
@@ -166,7 +166,7 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="modalBuyTitle">Modal title</h5>
+        <h5 class="modal-title" id="modalBuyTitle">Формування замовлення:</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -180,8 +180,16 @@
                         <label>
                         <input type="email" name="email" placeholder="Електронна пошта" required />
                         </label>
+                        <label>Ваш вибір:
+					        <select id="choice" name="choice">
+                                <option>Портрет</option>
+                                <option>Футболка</option>
+                                <option>Чашка</option>
+                                <option>Екосумка</option>
+                            </select>
+                        </label>
                         <label>
-                        <input class="tarea" type="text" name="message" placeholder="Введіть Ваше повідомлення:"/>
+                        <textarea name="message" placeholder="Введіть Ваше повідомлення:"></textarea>
                         </label>
                         <button id="my-form-button">Надіслати</button>
                         <p id="my-form-status"></p>
@@ -189,7 +197,7 @@
                 </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрити</button>
         <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
       </div>
     </div>
