@@ -98,28 +98,28 @@
                         <h3>Портрети</h3>
                         <img src="image/buy-portret.jpg" alt="Купити портрет" />
                         <div class="button-container">
-                            <button class="semi-transparent-button">Замовити</button>
+                            <button class="semi-transparent-button btn btn-primary" data-toggle="modal" data-target="#modalBuy">Замовити</button>
                         </div>
                     </article>
                     <article class="buy-card">
                         <h3>Футболки</h3>
                         <img src="image/buy-shirt.jpg" alt="Купити футболку" />
                         <div class="button-container">
-                            <button class="semi-transparent-button">Замовити</button>
+                            <button class="semi-transparent-button btn btn-primary" data-toggle="modal" data-target="#modalBuy">Замовити</button>
                         </div>
                     </article>
                     <article class="buy-card">
                         <h3>Чашки</h3>
                         <img src="image/buy-cup.jpg" alt="Купити чашку" />
                         <div class="button-container">
-                            <button class="semi-transparent-button">Замовити</button>
+                            <button class="semi-transparent-button btn btn-primary" data-toggle="modal" data-target="#modalBuy">Замовити</button>
                         </div>
                     </article>
                     <article class="buy-card">
                         <h3>Екосумки</h3>
                         <img src="image/buy-bag.jpg" alt="Купити екосумку" />
                         <div class="button-container">
-                            <button class="semi-transparent-button">Замовити</button>
+                            <button class="semi-transparent-button btn btn-primary" data-toggle="modal" data-target="#modalBuy">Замовити</button>
                         </div>
                     </article>
                 </div>
@@ -161,6 +161,40 @@
              <p class="wow fadeInUp">(c) Little_people_by_RoMaVi | 2020</p>
         </div>
     </footer>
+    <!-- Modal -->
+<div class="modal fade" id="modalBuy" tabindex="-1" role="dialog" aria-labelledby="modalBuyTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalBuyTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="contact-info-wrapper">
+                    <form id="my-form" action="https://formspree.io/mwkbqdkr" method="POST">
+                        <label>
+                        <input type="text" name="client-name" placeholder="Ім’я" required /> 
+                        </label>
+                        <label>
+                        <input type="email" name="email" placeholder="Електронна пошта" required />
+                        </label>
+                        <label>
+                        <input class="tarea" type="text" name="message" placeholder="Введіть Ваше повідомлення:"/>
+                        </label>
+                        <button id="my-form-button">Надіслати</button>
+                        <p id="my-form-status"></p>
+                    </form>
+                </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
