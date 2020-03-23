@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Yanone+Kaffeesatz&display=swap');
-:root {
-    --main-color: black;
-    --secondary-color: #9e8656;
-    /* background-color: #A1DAD3; */
+* {
     scroll-behavior: smooth;
 }
 
@@ -31,22 +28,23 @@ a {
 }
 
 .semi-transparent-button {
-  display: block;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 8px;
-  width: 80%;
-  max-width: 200px;
-  background: #fff;
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 8px;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  font-size: 20px;
-  letter-spacing: 1px;
-  transition: all 0.3s ease-out;
-} 
+    display: block;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 8px;
+    width: 80%;
+    max-width: 200px;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-out;
+}
+
 
 /* Header */
 
@@ -86,7 +84,6 @@ header nav .top-menu {
     text-decoration: none;
 }
 
-
 header nav .top-menu a {
     text-decoration: none;
     color: inherit;
@@ -96,7 +93,7 @@ header nav .top-menu a {
 }
 
 header nav .top-menu a:hover {
-    border: 1px solid var(--secondary-color);
+    border-bottom: 2px solid rgb(155, 224, 177);
 }
 
 
@@ -112,8 +109,6 @@ main section#banner .title {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     padding: 1em 0;
-    margin-block-start: 0em;
-    margin-block-end: 1em;
     text-align: center;
 }
 
@@ -122,7 +117,6 @@ main section#banner .bottom-title {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     padding: 0;
-    
     margin-block-end: 3em;
     text-align: center;
     justify-content: center;
@@ -130,9 +124,10 @@ main section#banner .bottom-title {
 
 
 /* About Section*/
+
 main section#about {
-   background: rgb(162,235,206);
-/* background: linear-gradient(13deg, rgba(162,235,206,1) 0%, rgba(99,155,146,1) 100%); */
+    background: rgb(162, 235, 206);
+    /* background: linear-gradient(13deg, rgba(162,235,206,1) 0%, rgba(99,155,146,1) 100%); */
 }
 
 main section#about .container {
@@ -187,9 +182,11 @@ main section#about .container .box3 {
     flex-direction: column;
 }
 
+
 /* Galery Section */
+
 main section#galery {
-    background: rgb(155,224,177);
+    background: rgb(155, 224, 177);
 }
 
 h2.galery-title {
@@ -206,12 +203,13 @@ h2.galery-title {
     max-width: 680px;
     margin: 0 auto;
     padding: 30px 0;
-    }
+}
+
 
 /* Buy Section */
 
 main section#buy {
-    background: rgb(162,223,235);
+    background: rgb(162, 223, 235);
 }
 
 main section#buy h2 {
@@ -291,20 +289,20 @@ main #delivery p {
 
 main #contact {
     background: rgb(113, 178, 224);
-    
 }
+
 main #contact h3 {
     display: flex;
     font-size: 2rem;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     padding: 2em 0;
-    margin-block-start: 0em;
+    margin: 0;
     text-align: center;
     justify-content: center;
 }
 
-main #contact .container .social  {
+main #contact .container .social {
     font-size: 1rem;
     font-family: 'Oswald', sans-serif;
     padding: 10px 30px;
@@ -314,17 +312,17 @@ main #contact .container .social  {
 main #contact .container .networks {
     display: flex;
     justify-content: center;
-    
 }
 
 main #contact .container .networks img {
     width: 30px;
     height: 30px;
 }
+
 main #contact .container .networks a {
     padding: 30px 10px 10px 10px;
-
 }
+
 
 /* footer container */
 
@@ -335,9 +333,7 @@ footer {
 footer .container p {
     display: flex;
     justify-content: flex-end;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    
+    margin: 0 0 0 0;
 }
 
 #my-form {
@@ -353,7 +349,7 @@ footer .container p {
 }
 
 input {
-   width: 90%;
+    width: 90%;
 }
 
 textarea {
@@ -382,7 +378,7 @@ button#my-form-button {
 button#my-form-button:hover {
     background-color: #0069d9;
     border-color: #0062cc;
-    box-shadow: 0 0 0 0.2rem rgba(38,143,255,.5);
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, .5);
 }
 
 button.btn.btn-secondary {
@@ -405,7 +401,5 @@ button.btn.btn-secondary {
 button.btn.btn-secondary:hover {
     background-color: #0069d9;
     border-color: #0062cc;
-    box-shadow: 0 0 0 0.2rem rgba(38,143,255,.5);
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, .5);
 }
-
-
