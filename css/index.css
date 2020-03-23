@@ -327,7 +327,7 @@ main #contact .container .networks a {
 /* footer container */
 
 footer {
-    background: rgb(4, 147, 248);
+    background: #6F9BF7;
 }
 
 footer .container p {
@@ -335,6 +335,8 @@ footer .container p {
     justify-content: flex-end;
     margin: 0 0 0 0;
 }
+
+/* Form and form button */
 
 #my-form {
     display: flex;
